@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лазарев Фарма — российское производство лекарств</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background: #f5fafc;
+            color: #1e2f3a;
+            line-height: 1.45;
+        }
+
+        .site {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.05);
+        }
+
+        .top-bar {
+            background: linear-gradient(105deg, #0a4c47 0%, #157f7a 100%);
+            color: white;
+            padding: 1rem 2rem;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .logo-block {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-pill {
+            background: white;
+            width: 56px;
+            height: 30px;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        .logo-pill span {
+            font-size: 20px;
+            font-weight: 800;
+            color: #157f7a;
+        }
+        .company-name {
+            font-size: 1.7rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+        .company-slogan {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            margin-top: 4px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: 0.2s;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-links a:hover {
+            border-bottom-color: white;
+        }
+
+        .section {
+            padding: 2.5rem 2rem;
+            border-bottom: 1px solid #e2ecf0;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0a4c47;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .section-title i {
+            font-size: 1.8rem;
+            color: #2c9b94;
+        }
+        .grid-2col {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .col {
+            flex: 1;
+            min-width: 240px;
+        }
+
+        .product-card {
+            background: #f9feff;
+            border-radius: 28px;
+            padding: 1.4rem;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.03);
+            border: 1px solid #d8eaef;
+            margin-bottom: 1.2rem;
+        }
+        .product-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #0a4c47;
+        }
+        .product-comp {
+            font-size: 0.9rem;
+            color: #3f6e74;
+            margin: 8px 0;
+        }
+        .badge {
+            background: #e1f3f0;
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #0a4c47;
+        }
+
+        .doc-list {
+            list-style: none;
+            padding: 0;
+        }
+        .doc-list li {
+            margin: 0.7rem 0;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+        .doc-list li i {
+            color: #2c9b94;
+            width: 22px;
+            font-size: 1rem;
+        }
+
+        .advantage {
+            background: #f0f8f6;
+            border-radius: 20px;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-block {
+            background: #eef4f6;
+            border-radius: 24px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        footer {
+            background: #0a2e2c;
+            color: #cddfe2;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 750px) {
+            .logo-area { flex-direction: column; align-items: flex-start; }
+            .nav-links { margin-top: 12px; }
+            .section { padding: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="site">
+    <div class="top-bar">
+        <div class="logo-area">
+            <div>
+                <div class="logo-block">
+                    <div class="logo-pill"><span>Л</span></div>
+                    <div>
+                        <div class="company-name">Лазарев Фарма</div>
+                        <div class="company-slogan">качество, проверенное временем</div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#about">О компании</a>
+                <a href="#products">Продукция</a>
+                <a href="#docs">Документы</a>
+                <a href="#why">Преимущества</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="section-title"><i class="fas fa-capsules"></i> О компании</div>
+        <p style="font-size:1.05rem; max-width: 85%;">ООО «Лазарев Фарма» — российское фармацевтическое предприятие, специализирующееся на производстве доступных противопростудных лекарственных средств. Мы работаем по стандартам надлежащей производственной практики, обеспечивая стабильное качество каждой партии.</p>
+    </div>
+
+    <div id="products" class="section">
+        <div class="section-title"><i class="fas fa-tablets"></i> Наша продукция</div>
+        <div class="grid-2col">
+            <div class="col">
+                <div class="product-card">
+                    <div class="product-name">Лазарев-Актив</div>
+                    <div class="product-comp">Парацетамол 500 мг + Цинк 10 мг + Витамин C 60 мг</div>
+                    <div><span class="badge">против простуды и гриппа</span> <span class="badge">тройное действие</span></div>
+                    <p style="margin-top: 12px;">Таблетки в блистерах по 10 штук. Снижают температуру, укрепляют иммунитет, ускоряют выздоровление.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="product-card">
+                    <div class="product-name">Лазарев-Актив Форте</div>
+                    <div class="product-comp">Парацетамол 500 мг + Цинк 15 мг + Витамин C 90 мг</div>
+                    <div><span class="badge">усиленная формула</span></div>
+                    <p style="margin-top: 12px;">Для интенсивных симптомов. Выпускается по отдельному регистрационному удостоверению.</p>
+                </div>
+            </div>
+        </div>
+        <p style="margin-top: 1rem; font-size:0.9rem;">* В разработке — детские шипучие таблетки с малиновым вкусом.</p>
+    </div>
+
+    <div id="docs" class="section">
+        <div class="section-title"><i class="fas fa-file-contract"></i> Лицензии и разрешения</div>
+        <div class="grid-2col">
+            <div class="col">
+                <ul class="doc-list">
+                    <li><i class="fas fa-check-circle"></i> Лицензия на производство лекарственных средств (Росздравнадзор, срок действия 5 лет)</li>
+                    <li><i class="fas fa-check-circle"></i> Заключение о соответствии помещения правилам надлежащей производственной практики</li>
+                    <li><i class="fas fa-check-circle"></i> Санитарно-эпидемиологическое заключение Роспотребнадзора</li>
+                    <li><i class="fas fa-check-circle"></i> Регистрационное удостоверение Минздрава РФ</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="doc-list">
+                    <li><i class="fas fa-check-circle"></i> Декларация соответствия Таможенного союза</li>
+                    <li><i class="fas fa-check-circle"></i> Договор на утилизацию медицинских отходов классов Г, В</li>
+                    <li><i class="fas fa-check-circle"></i> Сертификат надлежащей производственной практики (GMP)</li>
+                </ul>
+                <p style="margin-top: 12px; background:#eef4f6; padding: 8px 12px; border-radius: 20px;">Организационно-правовая форма: <strong>ООО «Лазарев Фарма»</strong>, уставной капитал 10 000 руб. Все сотрудники имеют медицинские книжки и фармацевтическое образование.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="why" class="section">
+        <div class="section-title"><i class="fas fa-star-of-life"></i> Почему «Лазарев Фарма»</div>
+        <div class="grid-2col">
+            <div class="col">
+                <div class="advantage">
+                    <i class="fas fa-flask" style="font-size:1.6rem; color:#157f7a;"></i>
+                    <h3 style="margin: 8px 0 4px;">Технологическая доступность</h3>
+                    <p>Не проводим дорогих клинических испытаний новых молекул — используем проверенные субстанции с подтверждённой равнодейственностью.</p>
+                </div>
+                <div class="advantage">
+                    <i class="fas fa-ruble-sign" style="font-size:1.6rem; color:#157f7a;"></i>
+                    <h3 style="margin: 8px 0 4px;">Цена для каждого</h3>
+                    <p>Бюджетный аналог дорогих комбинированных средств. Наша розничная цена — 90 рублей за упаковку.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="advantage">
+                    <i class="fas fa-hand-holding-heart" style="font-size:1.6rem; color:#157f7a;"></i>
+                    <h3 style="margin: 8px 0 4px;">Социальная ответственность</h3>
+                    <p>Участвуем в госпитальных закупках для больниц и поликлиник. Поставляем лекарства в регионы по программе импортозамещения.</p>
+                </div>
+                <div class="advantage">
+                    <i class="fas fa-chart-line" style="font-size:1.6rem; color:#157f7a;"></i>
+                    <h3 style="margin: 8px 0 4px;">Стабильные поставки</h3>
+                    <p>Собственное производство в промышленной зоне, запас сырья на 3 месяца. Работаем с 40 аптечными сетями.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacts" class="section">
+        <div class="section-title"><i class="fas fa-phone-alt"></i> Контакты</div>
+        <div class="contact-block">
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Юридический адрес:</strong> 400005, г. Волгоград, ул. Историческая, д. 15, офис 203</p>
+            <p><i class="fas fa-factory"></i> <strong>Производство:</strong> г. Волгоград, Краснооктябрьский район, проезд Индустриальный, 7Б</p>
+            <p><i class="fas fa-envelope"></i> <strong>Электронная почта:</strong> allazarev1909@gmail.com</p>
+            <p><i class="fas fa-phone"></i> <strong>Телефон для оптовиков:</strong> 8 995 420-40-91</p>
+            <p><i class="fas fa-headset"></i> <strong>Горячая линия для аптек:</strong> 8 995 420-40-91 (доб. 2)</p>
+            <p style="margin-top: 15px;">
+                <strong>Реквизиты (без цифр):</strong><br>
+                ИНН ____________________<br>
+                КПП ____________________<br>
+                ОГРН ___________________<br>
+                ОКПО ___________________<br>
+                Расчётный счёт ___________ в банке _________
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 ООО «Лазарев Фарма» — производство лекарственных средств. Информация для специалистов здравоохранения и партнёров.<br>
+        Не является публичной офертой. Наличие препаратов уточняйте в аптеках.
+    </footer>
+</div>
+</body>
+</html>
